@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCAB Ventures</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top shadow" style="background-color: rgba(255, 2255, 255, 0.8);">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#">
+                <i>eCAB</i>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-1 active" aria-current="page" href="index.html#">Home</a>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link nav-link-2" href="products.html#">Products</a>
+                    </li-->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-3" href="orders.html#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-4" href="receipts.html#">Receipts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll"
+        data-image-src="img/hero.jpg">
+        <form class="d-flex tm-search-form">
+            <input class="form-control tm-search-input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="container-fluid tm-container-content mt-3">
+        <div class="row mb-4">
+            <h2 class="col-6 tm-text-primary">
+                Products
+            </h2>
+            <button class="rounded bg-primary shadow">
+                <span class="fa fa-plus fa-lg"></span> Add Order
+            </button>
+        </div>
+        <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-3 justify-content-center mx-2 mb-5">
+
+            <div class="card p-0 mb-3 mx-2 productCard" data="" data-toggle="modal" data-target="#productModal">
+                <img class="card-img-top" src="img/img-04.jpg" alt="Card image">
+                <div class="card-img-overlay text-center">
+                    <h1 class=" my-5" style="background-color: rgba(255, 2255, 255, 0.8);">
+                        Parle-G Biscuit
+                    </h1>
+                </div>
+            </div>
+            <div class="card p-0 mb-3 mx-2 productCard" data="" data-toggle="modal" data-target="#productModal">
+                <img class="card-img-top" src="img/img-03.jpg" alt="Card image">
+                <div class="card-img-overlay text-center">
+                    <h1 class=" my-5" style="background-color: rgba(255, 2255, 255, 0.8);">
+                        Parle-G Biscuit
+                    </h1>
+                </div>
+            </div>
+            <div class="card p-0 mb-3 mx-2 productCard" data="" data-toggle="modal" data-target="#productModal">
+                <img class="card-img-top" src="img/img-05.jpg" alt="Card image">
+                <div class="card-img-overlay text-center">
+                    <h1 class=" my-5" style="background-color: rgba(255, 2255, 255, 0.8);">
+                        Parle-G Biscuit
+                    </h1>
+                </div>
+            </div>
+            <div class="card p-0 mb-3 mx-2 productCard" data="" data-toggle="modal" data-target="#productModal">
+                <img class="card-img-top" src="img/img-06.jpg" alt="Card image">
+                <div class="card-img-overlay text-center">
+                    <h1 class=" my-5" style="background-color: rgba(255, 2255, 255, 0.8);">
+                        Parle-G Biscuit
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- View Product Modal -->
+        <div class="modal fade" id="productModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Parle-G Biscuit</h1>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3>Size: M/S</h3>
+                        <li>4 packs in box</li>
+                        <li>42 units in box</li>
+                        <hr>
+                        <h3>Retail</h3>
+                        <li>Box: ¢20.00</li>
+                        <li>Pack: ¢5.00</li>
+                        <hr>
+                        <h3 class="text-center">Whole Sale: ¢51.00</h3>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success  ml-4"
+                            data-dismiss="modal" data-toggle="modal" data-target="#editModal">
+                            Edit</button>
+                        <button type="button" class="btn btn-danger  ml-4" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Edit Modal -->
+        <div class="modal fade" id="editModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h1 class="modal-title">Parle-G Biscuit</h1>
+                        <button type="button" class="close" data-dismiss="modal">X</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h3>Size: M/S</h3>
+                        <li>4 packs in box</li>
+                        <li>42 units in box</li>
+                        <hr>
+                        <h3>Retail</h3>
+                        <li>Box: ¢20.00</li>
+                        <li>Pack: ¢5.00</li>
+                        <hr>
+                        <h3 class="text-center">Whole Sale: ¢51.00</h3>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success  ml-4"
+                            data-dismiss="modal" data-toggle="modal" data-target="#editModal">
+                            Save</button>
+                        <button type="button" class="btn btn-danger  ml-4" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div> <!-- container-fluid, tm-container-content -->
+
+    <footer class="tm-bg-gray tm-text-gray tm-footer fixed-bottom">
+        <div class="row  row-cols-4 justify-content-center bg-secondary py-2  d-md-none">
+            <div class="col">
+                <a href="index.html#">
+                    <h1 class="text-center"><i class="fas fa-search fa-lg text-light"></i></h1>
+                </a>
+            </div>
+            <div class="col">
+                <a href="orders.html#">
+                    <h1 class="text-center"><i class="fas fa-truck fa-lg text-light"></i></h1>
+                </a>
+            </div>
+            <div class="col">
+                <a href="calculator.html#">
+                    <h1 class="text-center"><i class="fas fa-calculator fa-lg text-light"></i></h1>
+                </a>
+            </div>
+            <div class="col" id="back">
+                <h1 class="text-center"><i class="fas fa-caret-left fa-lg text-light"></i></h1>
+            </div>
+        </div>
+
+        <div class="container  d-none d-md-block">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5">
+                    <h3 class="tm-text-primary my-1 tm-footer-title">eCAB</h3>
+                    <p>Site to store up as a quick reference on info on products.
+                        For personal use only.<br>
+                        Extra features available in mobile view.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 px-5">
+                    <h3 class="tm-text-primary my-1 tm-footer-title">Info</h3>
+                    <ul class="tm-footer-links list-inline pl-0">
+                        <li class="list-inline-item"><a href="index.html#">Home</a></li>
+                        <li class="list-inline-item"><a href="products.html#">Products</a></li>
+                        <li class="list-inline-item"><a href="order.html#">Orders</a></li>
+                        <li class="list-inline-item"><a href="receipts.html#">Receipts</a></li>
+                    </ul>
+                </div>
+                <!--div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                        <li class="mb-2"><a href="https://pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                    </ul>
+                    <a href="#" class="tm-text-gray text-right d-block mb-2">Terms of Use</a>
+                    <a href="#" class="tm-text-gray text-right d-block">Privacy Policy</a>
+                </div-->
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-md-7 col-12 px-5 mb-3">
+                    Copyright 2022
+                </div>
+                <div class="col-lg-4 col-md-5 col-12 px-5 text-right">
+                    Designed by Baron Afutu
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
