@@ -1,0 +1,13 @@
+.font-lg{
+    font-size: x-large;
+}
+
+#productEdit input.form-control{
+    font-size: x-large;
+    margin-bottom: 0.2rem;
+}
+
+#productEdit input:read-only,
+#productEdit select:disabled{
+    background-color: whitesmoke;
+}
